@@ -1,0 +1,14 @@
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: $black;
+  font-size: $sp_small;
+  padding: 20px 0;
+  color: $white;
+  text-align: center;
+  // margin-top: 40px;
+  box-sizing: border-box;
+  // height:20px;
+  bottom:0;
+  overflow:hidden;
+}

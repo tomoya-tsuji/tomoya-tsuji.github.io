@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <title><%= current_page.data.title || "辻 朝也" %></title>
+    <meta name="description" content="UI/UXデザイナー。Tomoya Tsujiのポートフォリオサイトです。よかったら覗いてみてください。">
+    <%= stylesheet_link_tag "index" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <%= partial "header"%>
+  <body class="drawer drawer--top">
+    <%= yield %>
+  </body>
+  <%= partial "footer"%>
+</html>

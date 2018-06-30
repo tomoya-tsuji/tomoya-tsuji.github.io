@@ -1,0 +1,16 @@
+%header{"role" => "banner", "class" => "drawer-navbar"}
+  .wh-980.drawer-container
+    .drawer-navbar-header
+      .site-logo.drawer-brand
+        = link_to '/index.html' do
+          = image_tag 'logo@2x.png'
+      %button{"type" => "button", "class" => "drawer-toggle drawer-hamburger"}
+        %span.sr-only
+          toggle navigation
+        %span.drawer-hamburger-icon
+    %nav.drawer-nav{"role" => "navigation"}
+      %ul.drawer-menu.drawer-menu--right
+        %li.drawer-menu-item
+          = link_to 'works', '/works.html'
+        %li.drawer-menu-item
+          = link_to 'contact', '/contact.html'

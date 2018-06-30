@@ -1,0 +1,91 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  color: $black;
+  // height: auto !important;
+  margin-bottom: 100px;
+}
+
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+.paragraph {
+  font-size: $pc_small;
+  line-height: 2.2;
+  letter-spacing: .06em;
+
+  @media screen and (max-width: 768px) {
+    font-size: $sp_nomal;
+    line-height: 2.2;
+    letter-spacing: .06em;
+  }
+}
+
+.jp_text {
+  text-align: justify;
+  max-width: 100%;
+
+  @media screen and (max-width: 768px) {
+    text-align: justify;
+    max-width: 100%;
+  }
+}
+
+.wh-980 {
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  @media screen and (max-width: 768px) {
+    margin: 0 !important;
+  }
+}
+
+h3 {
+  font-size: $pc_nomal;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-top: 40px;
+  @media screen and (max-width: 768px) {
+    font-size: $sp_nomal;
+  }
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.pd-30 {
+  padding: 0 30px;
+  @media screen and (max-width: 768px) {
+    padding: 0 12px;
+  }
+}
+
+.image_wrap {
+  text-align: center;
+  img {
+    width: 80% !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      width: 100% !important;
+    }
+  }
+}
+
+.image_web {
+  text-align: center;
+  img {
+    width: 80% !important;
+    border: 1px solid rgba($gray, 0.3);
+  }
+}
